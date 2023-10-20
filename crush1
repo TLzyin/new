@@ -1,0 +1,295 @@
+---- Minecraft Crash Report ----
+// Why did you do that?
+
+Time: 2023-10-20 12:26:56
+Description: Ticking block entity
+
+java.lang.NullPointerException: Cannot invoke "net.minecraft.network.syncher.SynchedEntityData$DataItem.m_135403_()" because the return value of "net.minecraft.network.syncher.SynchedEntityData.m_135379_(net.minecraft.network.syncher.EntityDataAccessor)" is null
+	at net.minecraft.network.syncher.SynchedEntityData.m_135370_(SynchedEntityData.java:120) ~[client-1.20.1-20230612.114412-srg.jar%23396!/:?] {re:mixin,re:classloading}
+	at net.minecraft.world.entity.Entity.getMagneticAttachmentFace(Entity.java:9266) ~[client-1.20.1-20230612.114412-srg.jar%23396!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:bookshelf.common.mixins.json:accessors.entity.AccessorEntity,pl:mixin:APP:relics.mixins.json:MixinEntity,pl:mixin:APP:balm.mixins.json:EntityMixin,pl:mixin:APP:curios.mixins.json:AccessorEntity,pl:mixin:APP:attributeslib.mixins.json:EntityMixin,pl:mixin:APP:twilightdelight.mixins.json:EntityMixin,pl:mixin:APP:l2library.mixins.json:EntityMixin,pl:mixin:APP:l2complements.mixins.json:EntityMixin,pl:mixin:APP:mixins.artifacts.common.json:item.umbrella.EntityMixin,pl:mixin:APP:mixins.artifacts.common.json:item.wearable.aquadashers.EntityMixin,pl:mixin:APP:ars_nouveau.mixins.json:light.LightEntityMixin,pl:mixin:APP:alexscaves.mixins.json:EntityMixin,pl:mixin:APP:entityculling.mixins.json:CullableMixin,pl:mixin:APP:expandability.mixins.json:swimming.EntityMixin,pl:mixin:APP:expandability-common.mixins.json:fluidcollision.EntityMixin,pl:mixin:APP:expandability-common.mixins.json:swimming.EntityMixin,pl:mixin:A}
+	at net.minecraft.world.entity.Entity.handler$zpg000$ac_makeBoundingBox(Entity.java:9232) ~[client-1.20.1-20230612.114412-srg.jar%23396!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:bookshelf.common.mixins.json:accessors.entity.AccessorEntity,pl:mixin:APP:relics.mixins.json:MixinEntity,pl:mixin:APP:balm.mixins.json:EntityMixin,pl:mixin:APP:curios.mixins.json:AccessorEntity,pl:mixin:APP:attributeslib.mixins.json:EntityMixin,pl:mixin:APP:twilightdelight.mixins.json:EntityMixin,pl:mixin:APP:l2library.mixins.json:EntityMixin,pl:mixin:APP:l2complements.mixins.json:EntityMixin,pl:mixin:APP:mixins.artifacts.common.json:item.umbrella.EntityMixin,pl:mixin:APP:mixins.artifacts.common.json:item.wearable.aquadashers.EntityMixin,pl:mixin:APP:ars_nouveau.mixins.json:light.LightEntityMixin,pl:mixin:APP:alexscaves.mixins.json:EntityMixin,pl:mixin:APP:entityculling.mixins.json:CullableMixin,pl:mixin:APP:expandability.mixins.json:swimming.EntityMixin,pl:mixin:APP:expandability-common.mixins.json:fluidcollision.EntityMixin,pl:mixin:APP:expandability-common.mixins.json:swimming.EntityMixin,pl:mixin:A}
+	at net.minecraft.world.entity.Entity.m_142242_(Entity.java) ~[client-1.20.1-20230612.114412-srg.jar%23396!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:bookshelf.common.mixins.json:accessors.entity.AccessorEntity,pl:mixin:APP:relics.mixins.json:MixinEntity,pl:mixin:APP:balm.mixins.json:EntityMixin,pl:mixin:APP:curios.mixins.json:AccessorEntity,pl:mixin:APP:attributeslib.mixins.json:EntityMixin,pl:mixin:APP:twilightdelight.mixins.json:EntityMixin,pl:mixin:APP:l2library.mixins.json:EntityMixin,pl:mixin:APP:l2complements.mixins.json:EntityMixin,pl:mixin:APP:mixins.artifacts.common.json:item.umbrella.EntityMixin,pl:mixin:APP:mixins.artifacts.common.json:item.wearable.aquadashers.EntityMixin,pl:mixin:APP:ars_nouveau.mixins.json:light.LightEntityMixin,pl:mixin:APP:alexscaves.mixins.json:EntityMixin,pl:mixin:APP:entityculling.mixins.json:CullableMixin,pl:mixin:APP:expandability.mixins.json:swimming.EntityMixin,pl:mixin:APP:expandability-common.mixins.json:fluidcollision.EntityMixin,pl:mixin:APP:expandability-common.mixins.json:swimming.EntityMixin,pl:mixin:A}
+	at net.minecraft.world.entity.Entity.m_6034_(Entity.java:395) ~[client-1.20.1-20230612.114412-srg.jar%23396!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:bookshelf.common.mixins.json:accessors.entity.AccessorEntity,pl:mixin:APP:relics.mixins.json:MixinEntity,pl:mixin:APP:balm.mixins.json:EntityMixin,pl:mixin:APP:curios.mixins.json:AccessorEntity,pl:mixin:APP:attributeslib.mixins.json:EntityMixin,pl:mixin:APP:twilightdelight.mixins.json:EntityMixin,pl:mixin:APP:l2library.mixins.json:EntityMixin,pl:mixin:APP:l2complements.mixins.json:EntityMixin,pl:mixin:APP:mixins.artifacts.common.json:item.umbrella.EntityMixin,pl:mixin:APP:mixins.artifacts.common.json:item.wearable.aquadashers.EntityMixin,pl:mixin:APP:ars_nouveau.mixins.json:light.LightEntityMixin,pl:mixin:APP:alexscaves.mixins.json:EntityMixin,pl:mixin:APP:entityculling.mixins.json:CullableMixin,pl:mixin:APP:expandability.mixins.json:swimming.EntityMixin,pl:mixin:APP:expandability-common.mixins.json:fluidcollision.EntityMixin,pl:mixin:APP:expandability-common.mixins.json:swimming.EntityMixin,pl:mixin:A}
+	at net.minecraft.world.entity.Entity.<init>(Entity.java:260) ~[client-1.20.1-20230612.114412-srg.jar%23396!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:bookshelf.common.mixins.json:accessors.entity.AccessorEntity,pl:mixin:APP:relics.mixins.json:MixinEntity,pl:mixin:APP:balm.mixins.json:EntityMixin,pl:mixin:APP:curios.mixins.json:AccessorEntity,pl:mixin:APP:attributeslib.mixins.json:EntityMixin,pl:mixin:APP:twilightdelight.mixins.json:EntityMixin,pl:mixin:APP:l2library.mixins.json:EntityMixin,pl:mixin:APP:l2complements.mixins.json:EntityMixin,pl:mixin:APP:mixins.artifacts.common.json:item.umbrella.EntityMixin,pl:mixin:APP:mixins.artifacts.common.json:item.wearable.aquadashers.EntityMixin,pl:mixin:APP:ars_nouveau.mixins.json:light.LightEntityMixin,pl:mixin:APP:alexscaves.mixins.json:EntityMixin,pl:mixin:APP:entityculling.mixins.json:CullableMixin,pl:mixin:APP:expandability.mixins.json:swimming.EntityMixin,pl:mixin:APP:expandability-common.mixins.json:fluidcollision.EntityMixin,pl:mixin:APP:expandability-common.mixins.json:swimming.EntityMixin,pl:mixin:A}
+	at net.minecraftforge.entity.PartEntity.<init>(PartEntity.java:16) ~[forge-1.20.1-47.2.0-universal.jar%23401!/:?] {re:classloading}
+	at twilightforest.entity.TFPart.<init>(TFPart.java:36) ~[%5B暮色森林%5D%20twilightforest-1.20.1-4.3.1860-universal.jar%23307!/:4.3.1860] {re:classloading}
+	at twilightforest.entity.boss.NagaSegment.<init>(NagaSegment.java:29) ~[%5B暮色森林%5D%20twilightforest-1.20.1-4.3.1860-universal.jar%23307!/:4.3.1860] {re:classloading}
+	at twilightforest.entity.boss.Naga.<init>(Naga.java:103) ~[%5B暮色森林%5D%20twilightforest-1.20.1-4.3.1860-universal.jar%23307!/:4.3.1860] {re:classloading}
+	at net.minecraft.world.entity.EntityType.m_20615_(EntityType.java:525) ~[client-1.20.1-20230612.114412-srg.jar%23396!/:?] {re:mixin,xf:fml:forge:forge_method_redirector,re:classloading,xf:fml:forge:forge_method_redirector,pl:mixin:APP:architectury-common.mixins.json:inject.MixinEntityType,pl:mixin:A}
+	at twilightforest.block.entity.spawner.BossSpawnerBlockEntity.makeMyCreature(BossSpawnerBlockEntity.java:83) ~[%5B暮色森林%5D%20twilightforest-1.20.1-4.3.1860-universal.jar%23307!/:4.3.1860] {re:classloading}
+	at twilightforest.block.entity.spawner.BossSpawnerBlockEntity.spawnMyBoss(BossSpawnerBlockEntity.java:59) ~[%5B暮色森林%5D%20twilightforest-1.20.1-4.3.1860-universal.jar%23307!/:4.3.1860] {re:classloading}
+	at twilightforest.block.entity.spawner.BossSpawnerBlockEntity.tick(BossSpawnerBlockEntity.java:49) ~[%5B暮色森林%5D%20twilightforest-1.20.1-4.3.1860-universal.jar%23307!/:4.3.1860] {re:classloading}
+	at net.minecraft.world.level.chunk.LevelChunk$BoundTickingBlockEntity.m_142224_(LevelChunk.java:689) ~[client-1.20.1-20230612.114412-srg.jar%23396!/:?] {re:classloading}
+	at net.minecraft.world.level.chunk.LevelChunk$RebindableTickingBlockEntityWrapper.m_142224_(LevelChunk.java:782) ~[client-1.20.1-20230612.114412-srg.jar%23396!/:?] {re:classloading}
+	at net.minecraft.world.level.Level.m_46463_(Level.java:468) ~[client-1.20.1-20230612.114412-srg.jar%23396!/:?] {re:mixin,pl:accesstransformer:B,xf:fml:twilightforest:cloud,re:computing_frames,pl:accesstransformer:B,xf:fml:twilightforest:cloud,re:classloading,pl:accesstransformer:B,xf:fml:twilightforest:cloud,pl:mixin:APP:citadel.mixins.json:LevelMixin,pl:mixin:A}
+	at net.minecraft.server.level.ServerLevel.m_8793_(ServerLevel.java:351) ~[client-1.20.1-20230612.114412-srg.jar%23396!/:?] {re:mixin,pl:accesstransformer:B,xf:fml:libx:level_load,re:classloading,pl:accesstransformer:B,xf:fml:libx:level_load,pl:mixin:APP:citadel.mixins.json:ServerLevelMixin,pl:mixin:APP:modulargolems.mixins.json:ServerLevelMixin,pl:mixin:A}
+	at net.minecraft.server.MinecraftServer.m_5703_(MinecraftServer.java:893) ~[client-1.20.1-20230612.114412-srg.jar%23396!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:A}
+	at net.minecraft.server.MinecraftServer.m_5705_(MinecraftServer.java:814) ~[client-1.20.1-20230612.114412-srg.jar%23396!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:A}
+	at net.minecraft.client.server.IntegratedServer.m_5705_(IntegratedServer.java:89) ~[client-1.20.1-20230612.114412-srg.jar%23396!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.server.MinecraftServer.m_130011_(MinecraftServer.java:661) ~[client-1.20.1-20230612.114412-srg.jar%23396!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:A}
+	at net.minecraft.server.MinecraftServer.m_206580_(MinecraftServer.java:251) ~[client-1.20.1-20230612.114412-srg.jar%23396!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:A}
+	at java.lang.Thread.run(Thread.java:833) ~[?:?] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Stacktrace:
+	at net.minecraft.network.syncher.SynchedEntityData.m_135370_(SynchedEntityData.java:120) ~[client-1.20.1-20230612.114412-srg.jar%23396!/:?] {re:mixin,re:classloading}
+	at net.minecraft.world.entity.Entity.getMagneticAttachmentFace(Entity.java:9266) ~[client-1.20.1-20230612.114412-srg.jar%23396!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:bookshelf.common.mixins.json:accessors.entity.AccessorEntity,pl:mixin:APP:relics.mixins.json:MixinEntity,pl:mixin:APP:balm.mixins.json:EntityMixin,pl:mixin:APP:curios.mixins.json:AccessorEntity,pl:mixin:APP:attributeslib.mixins.json:EntityMixin,pl:mixin:APP:twilightdelight.mixins.json:EntityMixin,pl:mixin:APP:l2library.mixins.json:EntityMixin,pl:mixin:APP:l2complements.mixins.json:EntityMixin,pl:mixin:APP:mixins.artifacts.common.json:item.umbrella.EntityMixin,pl:mixin:APP:mixins.artifacts.common.json:item.wearable.aquadashers.EntityMixin,pl:mixin:APP:ars_nouveau.mixins.json:light.LightEntityMixin,pl:mixin:APP:alexscaves.mixins.json:EntityMixin,pl:mixin:APP:entityculling.mixins.json:CullableMixin,pl:mixin:APP:expandability.mixins.json:swimming.EntityMixin,pl:mixin:APP:expandability-common.mixins.json:fluidcollision.EntityMixin,pl:mixin:APP:expandability-common.mixins.json:swimming.EntityMixin,pl:mixin:A}
+	at net.minecraft.world.entity.Entity.handler$zpg000$ac_makeBoundingBox(Entity.java:9232) ~[client-1.20.1-20230612.114412-srg.jar%23396!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:bookshelf.common.mixins.json:accessors.entity.AccessorEntity,pl:mixin:APP:relics.mixins.json:MixinEntity,pl:mixin:APP:balm.mixins.json:EntityMixin,pl:mixin:APP:curios.mixins.json:AccessorEntity,pl:mixin:APP:attributeslib.mixins.json:EntityMixin,pl:mixin:APP:twilightdelight.mixins.json:EntityMixin,pl:mixin:APP:l2library.mixins.json:EntityMixin,pl:mixin:APP:l2complements.mixins.json:EntityMixin,pl:mixin:APP:mixins.artifacts.common.json:item.umbrella.EntityMixin,pl:mixin:APP:mixins.artifacts.common.json:item.wearable.aquadashers.EntityMixin,pl:mixin:APP:ars_nouveau.mixins.json:light.LightEntityMixin,pl:mixin:APP:alexscaves.mixins.json:EntityMixin,pl:mixin:APP:entityculling.mixins.json:CullableMixin,pl:mixin:APP:expandability.mixins.json:swimming.EntityMixin,pl:mixin:APP:expandability-common.mixins.json:fluidcollision.EntityMixin,pl:mixin:APP:expandability-common.mixins.json:swimming.EntityMixin,pl:mixin:A}
+	at net.minecraft.world.entity.Entity.m_142242_(Entity.java) ~[client-1.20.1-20230612.114412-srg.jar%23396!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:bookshelf.common.mixins.json:accessors.entity.AccessorEntity,pl:mixin:APP:relics.mixins.json:MixinEntity,pl:mixin:APP:balm.mixins.json:EntityMixin,pl:mixin:APP:curios.mixins.json:AccessorEntity,pl:mixin:APP:attributeslib.mixins.json:EntityMixin,pl:mixin:APP:twilightdelight.mixins.json:EntityMixin,pl:mixin:APP:l2library.mixins.json:EntityMixin,pl:mixin:APP:l2complements.mixins.json:EntityMixin,pl:mixin:APP:mixins.artifacts.common.json:item.umbrella.EntityMixin,pl:mixin:APP:mixins.artifacts.common.json:item.wearable.aquadashers.EntityMixin,pl:mixin:APP:ars_nouveau.mixins.json:light.LightEntityMixin,pl:mixin:APP:alexscaves.mixins.json:EntityMixin,pl:mixin:APP:entityculling.mixins.json:CullableMixin,pl:mixin:APP:expandability.mixins.json:swimming.EntityMixin,pl:mixin:APP:expandability-common.mixins.json:fluidcollision.EntityMixin,pl:mixin:APP:expandability-common.mixins.json:swimming.EntityMixin,pl:mixin:A}
+	at net.minecraft.world.entity.Entity.m_6034_(Entity.java:395) ~[client-1.20.1-20230612.114412-srg.jar%23396!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:bookshelf.common.mixins.json:accessors.entity.AccessorEntity,pl:mixin:APP:relics.mixins.json:MixinEntity,pl:mixin:APP:balm.mixins.json:EntityMixin,pl:mixin:APP:curios.mixins.json:AccessorEntity,pl:mixin:APP:attributeslib.mixins.json:EntityMixin,pl:mixin:APP:twilightdelight.mixins.json:EntityMixin,pl:mixin:APP:l2library.mixins.json:EntityMixin,pl:mixin:APP:l2complements.mixins.json:EntityMixin,pl:mixin:APP:mixins.artifacts.common.json:item.umbrella.EntityMixin,pl:mixin:APP:mixins.artifacts.common.json:item.wearable.aquadashers.EntityMixin,pl:mixin:APP:ars_nouveau.mixins.json:light.LightEntityMixin,pl:mixin:APP:alexscaves.mixins.json:EntityMixin,pl:mixin:APP:entityculling.mixins.json:CullableMixin,pl:mixin:APP:expandability.mixins.json:swimming.EntityMixin,pl:mixin:APP:expandability-common.mixins.json:fluidcollision.EntityMixin,pl:mixin:APP:expandability-common.mixins.json:swimming.EntityMixin,pl:mixin:A}
+	at net.minecraft.world.entity.Entity.<init>(Entity.java:260) ~[client-1.20.1-20230612.114412-srg.jar%23396!/:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:bookshelf.common.mixins.json:accessors.entity.AccessorEntity,pl:mixin:APP:relics.mixins.json:MixinEntity,pl:mixin:APP:balm.mixins.json:EntityMixin,pl:mixin:APP:curios.mixins.json:AccessorEntity,pl:mixin:APP:attributeslib.mixins.json:EntityMixin,pl:mixin:APP:twilightdelight.mixins.json:EntityMixin,pl:mixin:APP:l2library.mixins.json:EntityMixin,pl:mixin:APP:l2complements.mixins.json:EntityMixin,pl:mixin:APP:mixins.artifacts.common.json:item.umbrella.EntityMixin,pl:mixin:APP:mixins.artifacts.common.json:item.wearable.aquadashers.EntityMixin,pl:mixin:APP:ars_nouveau.mixins.json:light.LightEntityMixin,pl:mixin:APP:alexscaves.mixins.json:EntityMixin,pl:mixin:APP:entityculling.mixins.json:CullableMixin,pl:mixin:APP:expandability.mixins.json:swimming.EntityMixin,pl:mixin:APP:expandability-common.mixins.json:fluidcollision.EntityMixin,pl:mixin:APP:expandability-common.mixins.json:swimming.EntityMixin,pl:mixin:A}
+	at net.minecraftforge.entity.PartEntity.<init>(PartEntity.java:16) ~[forge-1.20.1-47.2.0-universal.jar%23401!/:?] {re:classloading}
+	at twilightforest.entity.TFPart.<init>(TFPart.java:36) ~[%5B暮色森林%5D%20twilightforest-1.20.1-4.3.1860-universal.jar%23307!/:4.3.1860] {re:classloading}
+	at twilightforest.entity.boss.NagaSegment.<init>(NagaSegment.java:29) ~[%5B暮色森林%5D%20twilightforest-1.20.1-4.3.1860-universal.jar%23307!/:4.3.1860] {re:classloading}
+	at twilightforest.entity.boss.Naga.<init>(Naga.java:103) ~[%5B暮色森林%5D%20twilightforest-1.20.1-4.3.1860-universal.jar%23307!/:4.3.1860] {re:classloading}
+	at net.minecraft.world.entity.EntityType.m_20615_(EntityType.java:525) ~[client-1.20.1-20230612.114412-srg.jar%23396!/:?] {re:mixin,xf:fml:forge:forge_method_redirector,re:classloading,xf:fml:forge:forge_method_redirector,pl:mixin:APP:architectury-common.mixins.json:inject.MixinEntityType,pl:mixin:A}
+	at twilightforest.block.entity.spawner.BossSpawnerBlockEntity.makeMyCreature(BossSpawnerBlockEntity.java:83) ~[%5B暮色森林%5D%20twilightforest-1.20.1-4.3.1860-universal.jar%23307!/:4.3.1860] {re:classloading}
+	at twilightforest.block.entity.spawner.BossSpawnerBlockEntity.spawnMyBoss(BossSpawnerBlockEntity.java:59) ~[%5B暮色森林%5D%20twilightforest-1.20.1-4.3.1860-universal.jar%23307!/:4.3.1860] {re:classloading}
+	at twilightforest.block.entity.spawner.BossSpawnerBlockEntity.tick(BossSpawnerBlockEntity.java:49) ~[%5B暮色森林%5D%20twilightforest-1.20.1-4.3.1860-universal.jar%23307!/:4.3.1860] {re:classloading}
+	at net.minecraft.world.level.chunk.LevelChunk$BoundTickingBlockEntity.m_142224_(LevelChunk.java:689) ~[client-1.20.1-20230612.114412-srg.jar%23396!/:?] {re:classloading}
+	at net.minecraft.world.level.chunk.LevelChunk$RebindableTickingBlockEntityWrapper.m_142224_(LevelChunk.java:782) ~[client-1.20.1-20230612.114412-srg.jar%23396!/:?] {re:classloading}
+	at net.minecraft.world.level.Level.m_46463_(Level.java:468) ~[client-1.20.1-20230612.114412-srg.jar%23396!/:?] {re:mixin,pl:accesstransformer:B,xf:fml:twilightforest:cloud,re:computing_frames,pl:accesstransformer:B,xf:fml:twilightforest:cloud,re:classloading,pl:accesstransformer:B,xf:fml:twilightforest:cloud,pl:mixin:APP:citadel.mixins.json:LevelMixin,pl:mixin:A}
+	at net.minecraft.server.level.ServerLevel.m_8793_(ServerLevel.java:351) ~[client-1.20.1-20230612.114412-srg.jar%23396!/:?] {re:mixin,pl:accesstransformer:B,xf:fml:libx:level_load,re:classloading,pl:accesstransformer:B,xf:fml:libx:level_load,pl:mixin:APP:citadel.mixins.json:ServerLevelMixin,pl:mixin:APP:modulargolems.mixins.json:ServerLevelMixin,pl:mixin:A}
+-- Block entity being ticked --
+Details:
+	Name: twilightforest:naga_spawner // twilightforest.block.entity.spawner.NagaSpawnerBlockEntity
+	Block: Block{twilightforest:naga_boss_spawner}
+	Block location: World: (2600,7,248), Section: (at 8,7,8 in 162,0,15; chunk contains blocks 2592,-32,240 to 2607,255,255), Region: (5,0; contains chunks 160,0 to 191,31, blocks 2560,-32,0 to 3071,255,511)
+	Block: Block{twilightforest:naga_boss_spawner}
+	Block location: World: (2600,7,248), Section: (at 8,7,8 in 162,0,15; chunk contains blocks 2592,-32,240 to 2607,255,255), Region: (5,0; contains chunks 160,0 to 191,31, blocks 2560,-32,0 to 3071,255,511)
+Stacktrace:
+	at net.minecraft.world.level.chunk.LevelChunk$BoundTickingBlockEntity.m_142224_(LevelChunk.java:689) ~[client-1.20.1-20230612.114412-srg.jar%23396!/:?] {re:classloading}
+	at net.minecraft.world.level.chunk.LevelChunk$RebindableTickingBlockEntityWrapper.m_142224_(LevelChunk.java:782) ~[client-1.20.1-20230612.114412-srg.jar%23396!/:?] {re:classloading}
+	at net.minecraft.world.level.Level.m_46463_(Level.java:468) ~[client-1.20.1-20230612.114412-srg.jar%23396!/:?] {re:mixin,pl:accesstransformer:B,xf:fml:twilightforest:cloud,re:computing_frames,pl:accesstransformer:B,xf:fml:twilightforest:cloud,re:classloading,pl:accesstransformer:B,xf:fml:twilightforest:cloud,pl:mixin:APP:citadel.mixins.json:LevelMixin,pl:mixin:A}
+	at net.minecraft.server.level.ServerLevel.m_8793_(ServerLevel.java:351) ~[client-1.20.1-20230612.114412-srg.jar%23396!/:?] {re:mixin,pl:accesstransformer:B,xf:fml:libx:level_load,re:classloading,pl:accesstransformer:B,xf:fml:libx:level_load,pl:mixin:APP:citadel.mixins.json:ServerLevelMixin,pl:mixin:APP:modulargolems.mixins.json:ServerLevelMixin,pl:mixin:A}
+	at net.minecraft.server.MinecraftServer.m_5703_(MinecraftServer.java:893) ~[client-1.20.1-20230612.114412-srg.jar%23396!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:A}
+	at net.minecraft.server.MinecraftServer.m_5705_(MinecraftServer.java:814) ~[client-1.20.1-20230612.114412-srg.jar%23396!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:A}
+	at net.minecraft.client.server.IntegratedServer.m_5705_(IntegratedServer.java:89) ~[client-1.20.1-20230612.114412-srg.jar%23396!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.server.MinecraftServer.m_130011_(MinecraftServer.java:661) ~[client-1.20.1-20230612.114412-srg.jar%23396!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:A}
+	at net.minecraft.server.MinecraftServer.m_206580_(MinecraftServer.java:251) ~[client-1.20.1-20230612.114412-srg.jar%23396!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:A}
+	at java.lang.Thread.run(Thread.java:833) ~[?:?] {}
+
+
+-- Affected level --
+Details:
+	All players: 1 total; [ServerPlayer['xingkongzimou'/252, l='ServerLevel[新的世界]', x=2556.06, y=14.27, z=269.63]]
+	Chunk stats: 2809
+	Level dimension: twilightforest:twilight_forest
+	Derived: true
+	Level spawn location: World: (304,114,80), Section: (at 0,2,0 in 19,7,5; chunk contains blocks 304,-32,80 to 319,255,95), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,-32,0 to 511,255,511)
+	Level time: 84585 game time, 84585 day time
+	Level name: 新的世界
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: true
+	Level weather: Rain time: 123976 (now: false), thunder time: 158544 (now: false)
+	Known server brands: forge
+	Removed feature flags: 
+	Level was modded: true
+	Level storage version: 0x04ABD - Anvil
+Stacktrace:
+	at net.minecraft.server.MinecraftServer.m_5703_(MinecraftServer.java:893) ~[client-1.20.1-20230612.114412-srg.jar%23396!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:A}
+	at net.minecraft.server.MinecraftServer.m_5705_(MinecraftServer.java:814) ~[client-1.20.1-20230612.114412-srg.jar%23396!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:A}
+	at net.minecraft.client.server.IntegratedServer.m_5705_(IntegratedServer.java:89) ~[client-1.20.1-20230612.114412-srg.jar%23396!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.server.MinecraftServer.m_130011_(MinecraftServer.java:661) ~[client-1.20.1-20230612.114412-srg.jar%23396!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:A}
+	at net.minecraft.server.MinecraftServer.m_206580_(MinecraftServer.java:251) ~[client-1.20.1-20230612.114412-srg.jar%23396!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:A}
+	at java.lang.Thread.run(Thread.java:833) ~[?:?] {}
+
+
+-- System Details --
+Details:
+	Minecraft Version: 1.20.1
+	Minecraft Version ID: 1.20.1
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 17.0.2, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode, sharing), Oracle Corporation
+	Memory: 3844168440 bytes (3666 MiB) / 6283067392 bytes (5992 MiB) up to 9026142208 bytes (8608 MiB)
+	CPUs: 12
+	Processor Vendor: AuthenticAMD
+	Processor Name: AMD Ryzen 5 4600H with Radeon Graphics         
+	Identifier: AuthenticAMD Family 23 Model 96 Stepping 1
+	Microarchitecture: unknown
+	Frequency (GHz): 2.99
+	Number of physical packages: 1
+	Number of physical CPUs: 6
+	Number of logical CPUs: 12
+	Graphics card #0 name: NVIDIA GeForce GTX 1650
+	Graphics card #0 vendor: NVIDIA (0x10de)
+	Graphics card #0 VRAM (MB): 4095.00
+	Graphics card #0 deviceId: 0x1f99
+	Graphics card #0 versionInfo: DriverVersion=30.0.14.7219
+	Memory slot #0 capacity (MB): 8192.00
+	Memory slot #0 clockSpeed (GHz): 3.20
+	Memory slot #0 type: DDR4
+	Memory slot #1 capacity (MB): 8192.00
+	Memory slot #1 clockSpeed (GHz): 3.20
+	Memory slot #1 type: DDR4
+	Virtual memory max (MB): 21952.84
+	Virtual memory used (MB): 16320.09
+	Swap memory total (MB): 5699.52
+	Swap memory used (MB): 2610.24
+	JVM Flags: 6 total; -XX:+UseG1GC -XX:-UseAdaptiveSizePolicy -XX:-OmitStackTraceInFastThrow -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Xmn256m -Xmx8601m
+	Server Running: true
+	Player Count: 1 / 8; [ServerPlayer['xingkongzimou'/252, l='ServerLevel[新的世界]', x=2556.06, y=14.27, z=269.63]]
+	Data Packs: vanilla, mod:skyvillages (incompatible), mod:geckolib, mod:underground_villages, mod:tipsmod (incompatible), mod:dynamiclights (incompatible), mod:sophisticatedcore (incompatible), mod:modnametooltip (incompatible), mod:controlling (incompatible), mod:cookingforblockheads, mod:placebo (incompatible), mod:citadel (incompatible), mod:alexsmobs (incompatible), mod:bagus_lib, mod:mixinextras (incompatible), mod:bookshelf, mod:guardvillagers (incompatible), mod:sophisticatedbackpacks (incompatible), mod:relics, mod:apotheosis (incompatible), mod:balm, mod:invtweaksemuforipn (incompatible), mod:cataclysm_weaponery, mod:jeresources, mod:cloth_config (incompatible), mod:ctov, mod:dummmmmmy (incompatible), mod:twilightforest, mod:mob_grinding_utils (incompatible), mod:refinedstorage, mod:corpse, mod:industrialforegoing (incompatible), mod:farmersdelight, mod:torchmaster, mod:repurposed_structures, mod:morebows, mod:colorfulhearts (incompatible), mod:hangglider, mod:villagespawnpoint, mod:mysticaladaptations, mod:curios (incompatible), mod:cataclysm (incompatible), mod:patchouli (incompatible), mod:collective, mod:cullleaves (incompatible), mod:searchables (incompatible), mod:attributeslib (incompatible), mod:villagertools (incompatible), mod:ftbultimine (incompatible), mod:constructionwand, mod:twilightdelight (incompatible), mod:inventoryprofilesnext (incompatible), mod:architectury (incompatible), mod:flib, mod:l2library (incompatible), mod:l2backpack (incompatible), mod:l2damagetracker (incompatible), mod:polylib (incompatible), mod:shulkerboxtooltip (incompatible), mod:betteradvancements (incompatible), mod:cucumber, mod:l2tabs (incompatible), mod:ftblibrary (incompatible), mod:ftbteams (incompatible), mod:octolib (incompatible), mod:itemfilters (incompatible), mod:jei, mod:attributefix (incompatible), mod:libraryferret, mod:l2complements (incompatible), mod:mekanism, mod:mekanismgenerators, mod:waystones, mod:journeymap (incompatible), mod:comforts (incompatible), mod:naturescompass, mod:artifacts, mod:libx, mod:morevanillatools, mod:l2screentracker (incompatible), mod:ftbbackups2 (incompatible), mod:midnightlib (incompatible), mod:everycomp (incompatible), mod:whatthegold, mod:ars_nouveau (incompatible), mod:forge, mod:hunters_return, mod:mysticalagriculture, mod:mysticalagradditions, mod:ironchest, mod:dungeons_arise, mod:craftingtweaks, mod:alexscaves (incompatible), mod:libipn (incompatible), mod:enchdesc (incompatible), mod:terrablender (incompatible), mod:biomesoplenty (incompatible), mod:moonlight (incompatible), mod:eccentrictome, mod:ftbquests (incompatible), mod:titanium (incompatible), mod:jade (incompatible), mod:ae2 (incompatible), mod:spectrelib (incompatible), mod:modulargolems (incompatible), mod:l2archery (incompatible), mod:l2weaponry (incompatible), mod:whats_that_slot, mod:coinsje (incompatible), mod:kotlinforforge (incompatible), mod:easy_villagers, mod:pipez, mod:croptopia (incompatible), mod:bhc (incompatible), mod:polymorph (incompatible), mod:storagedrawers (incompatible), mod:entityculling, mod:inventoryhud (incompatible), mod:endlessbiomes, mod:appleskin (incompatible), mod:lootr, mod:ferritecore (incompatible), mod:solcarrot (incompatible), mod:puzzleslib, mod:l2itemselector (incompatible), mod:cosmeticarmorreworked, mod:expandability (incompatible), mod:overloadedarmorbar (incompatible), mod:responsiveshields (incompatible), Everycomp Generated Pack
+	Enabled Feature Flags: minecraft:vanilla
+	World Generation: Stable
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'forge'; Server brand changed to 'forge'
+	Launched Version: 1.20.1-Forge_47.2.0
+	ModLauncher: 10.0.9+10.0.9+main.dcd20f30
+	ModLauncher launch target: forgeclient
+	ModLauncher naming: srg
+	ModLauncher services: 
+		mixin-0.8.5.jar mixin PLUGINSERVICE 
+		eventbus-6.0.5.jar eventbus PLUGINSERVICE 
+		fmlloader-1.20.1-47.2.0.jar slf4jfixer PLUGINSERVICE 
+		fmlloader-1.20.1-47.2.0.jar object_holder_definalize PLUGINSERVICE 
+		fmlloader-1.20.1-47.2.0.jar runtime_enum_extender PLUGINSERVICE 
+		fmlloader-1.20.1-47.2.0.jar capability_token_subclass PLUGINSERVICE 
+		accesstransformers-8.0.4.jar accesstransformer PLUGINSERVICE 
+		fmlloader-1.20.1-47.2.0.jar runtimedistcleaner PLUGINSERVICE 
+		modlauncher-10.0.9.jar mixin TRANSFORMATIONSERVICE 
+		modlauncher-10.0.9.jar fml TRANSFORMATIONSERVICE 
+		modlauncher-10.0.9.jar I18nUpdateMod TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		minecraft@1.0
+		javafml@null
+		kotlinforforge@4.5.0
+		lowcodefml@null
+	Mod List: 
+		[天空村庄] SkyVillages-1.0.3-1.19.2-1.20.x-forge-relea|Sky Villages                  |skyvillages                   |1.0.3               |DONE      |Manifest: NOSIGNATURE
+		geckolib-forge-1.20.1-4.2.2.jar                   |GeckoLib 4                    |geckolib                      |4.2.2               |DONE      |Manifest: NOSIGNATURE
+		UndergroundVillages-1.20.1-2.0.0.jar              |Underground Villages Mod      |underground_villages          |2.0.0               |DONE      |Manifest: NOSIGNATURE
+		[提示] Tips-Forge-1.20.1-12.0.3.jar                 |Tips                          |tipsmod                       |12.0.3              |DONE      |Manifest: eb:c4:b1:67:8b:f9:0c:db:dc:4f:01:b1:8e:61:64:39:4c:10:85:0b:a6:c4:c7:48:f0:fa:95:f2:cb:08:3a:e5
+		[动态光源] dynamiclights-1.20.1.1.jar                 |Dynamic Lights                |dynamiclights                 |1.20.1.1            |DONE      |Manifest: NOSIGNATURE
+		[精妙核心] sophisticatedcore-1.20.1-0.5.89.425.jar    |Sophisticated Core            |sophisticatedcore             |0.5.89.425          |DONE      |Manifest: NOSIGNATURE
+		[模组名称显示] modnametooltip-1.20.1-1.20.0.jar         |Mod Name Tooltip              |modnametooltip                |1.20.0              |DONE      |Manifest: NOSIGNATURE
+		[键位冲突显示] Controlling-forge-1.20.1-12.0.2.jar      |Controlling                   |controlling                   |12.0.2              |DONE      |Manifest: NOSIGNATURE
+		[懒人厨房] cookingforblockheads-forge-1.20-16.0.1.jar |CookingForBlockheads          |cookingforblockheads          |16.0.1              |DONE      |Manifest: NOSIGNATURE
+		Placebo-1.20.1-8.3.7.jar                          |Placebo                       |placebo                       |8.3.7               |DONE      |Manifest: NOSIGNATURE
+		citadel-2.4.5-1.20.1.jar                          |Citadel                       |citadel                       |2.4.5               |DONE      |Manifest: NOSIGNATURE
+		[Alex 的生物] alexsmobs-1.22.6.jar                   |Alex's Mobs                   |alexsmobs                     |1.22.6              |DONE      |Manifest: NOSIGNATURE
+		bagus_lib-1.20.1-4.0.3.jar                        |Bagus Lib                     |bagus_lib                     |1.20.1-4.0.3        |DONE      |Manifest: NOSIGNATURE
+		mixinextras-forge-0.2.0-rc.3.jar                  |MixinExtras                   |mixinextras                   |0.2.0-rc.3          |DONE      |Manifest: NOSIGNATURE
+		Bookshelf-Forge-1.20.1-20.0.5.jar                 |Bookshelf                     |bookshelf                     |20.0.5              |DONE      |Manifest: eb:c4:b1:67:8b:f9:0c:db:dc:4f:01:b1:8e:61:64:39:4c:10:85:0b:a6:c4:c7:48:f0:fa:95:f2:cb:08:3a:e5
+		[警卫村民] guardvillagers-1.20.1-1.6.3.jar            |Guard Villagers               |guardvillagers                |1.20.1-1.6.3        |DONE      |Manifest: NOSIGNATURE
+		[精妙背包] sophisticatedbackpacks-1.20.1-3.18.59.909.j|Sophisticated Backpacks       |sophisticatedbackpacks        |3.18.59.909         |DONE      |Manifest: NOSIGNATURE
+		[遗物] relics-1.20.1-0.4.9.jar                      |Relics                        |relics                        |0.4.9               |DONE      |Manifest: NOSIGNATURE
+		[神化] Apotheosis-1.20.1-7.0.5.jar                  |Apotheosis                    |apotheosis                    |7.0.5               |DONE      |Manifest: NOSIGNATURE
+		balm-forge-1.20.1-7.1.4.jar                       |Balm                          |balm                          |7.1.4               |DONE      |Manifest: NOSIGNATURE
+		InvTweaksEmuForIPN-forge-1.20-1.0.7.jar           |InvTweaks Emulation For IPN   |invtweaksemuforipn            |1.0.7               |DONE      |Manifest: NOSIGNATURE
+		CataclysmWeaponery1.0.3-1.20.1.jar                |Cataclysm Weaponery           |cataclysm_weaponery           |1.0.3               |DONE      |Manifest: NOSIGNATURE
+		JustEnoughResources-1.20.1-1.4.0.238.jar          |Just Enough Resources         |jeresources                   |1.4.0.238           |DONE      |Manifest: NOSIGNATURE
+		cloth-config-11.1.106-forge.jar                   |Cloth Config v10 API          |cloth_config                  |11.1.106            |DONE      |Manifest: NOSIGNATURE
+		ctov-3.3.5a.jar                                   |ChoiceTheorem's Overhauled Vil|ctov                          |3.3.5a              |DONE      |Manifest: NOSIGNATURE
+		[试验假人] dummmmmmy-1.20-1.8.3.jar                   |MmmMmmMmmmmm                  |dummmmmmy                     |1.20-1.8.3          |DONE      |Manifest: NOSIGNATURE
+		[暮色森林] twilightforest-1.20.1-4.3.1860-universal.ja|The Twilight Forest           |twilightforest                |4.3.1860            |DONE      |Manifest: NOSIGNATURE
+		[刷怪塔实用设备] mob_grinding_utils-1.20.1-1.0.3.jar     |Mob Grinding Utils            |mob_grinding_utils            |1.20.1-1.0.3        |DONE      |Manifest: NOSIGNATURE
+		[精致存储] refinedstorage-1.12.3.jar                  |Refined Storage               |refinedstorage                |1.12.3              |DONE      |Manifest: NOSIGNATURE
+		[遗体] corpse-1.20.1-1.0.5.jar                      |Corpse                        |corpse                        |1.20.1-1.0.5        |DONE      |Manifest: NOSIGNATURE
+		[工业先锋] industrial-foregoing-1.20.1-3.5.9.jar      |Industrial Foregoing          |industrialforegoing           |3.5.9               |DONE      |Manifest: NOSIGNATURE
+		[农夫乐事] FarmersDelight-1.20.1-1.2.3.jar            |Farmer's Delight              |farmersdelight                |1.20.1-1.2.3        |DONE      |Manifest: NOSIGNATURE
+		[火炬大师] torchmaster-20.1.4.jar                     |Torchmaster                   |torchmaster                   |20.1.4              |DONE      |Manifest: NOSIGNATURE
+		[结构变体] repurposed_structures-7.1.7+1.20.1-forge.ja|Repurposed Structures         |repurposed_structures         |7.1.7+1.20.1-forge  |DONE      |Manifest: NOSIGNATURE
+		[更多弓：重振旗鼓！] MoreBows-1.0.13+1.20.x.forge.jar      |More Bows Restrung            |morebows                      |1.0.13              |DONE      |Manifest: NOSIGNATURE
+		[更美观的血条] colorfulhearts-forge-1.20.1-4.0.3.jar    |Colorful Hearts               |colorfulhearts                |4.0.3               |DONE      |Manifest: NOSIGNATURE
+		HangGlider-v8.0.1-1.20.1-Forge.jar                |Hang Glider                   |hangglider                    |8.0.1               |DONE      |Manifest: 9a:09:85:98:65:c4:8c:11:c5:49:f6:d6:33:23:39:df:8d:b4:ff:92:84:b8:bd:a5:83:9f:ac:7f:2a:d1:4b:6a
+		[村庄出生点] villagespawnpoint-1.20.1-4.0.jar          |Village Spawn Point           |villagespawnpoint             |4.0                 |DONE      |Manifest: NOSIGNATURE
+		[更好的神秘农业] MysticalAdaptations-1.20.1-1.0.jar      |Mystical Adaptations          |mysticaladaptations           |1.20.1-1.0          |DONE      |Manifest: NOSIGNATURE
+		curios-forge-5.3.5+1.20.1.jar                     |Curios API                    |curios                        |5.3.5+1.20.1        |DONE      |Manifest: NOSIGNATURE
+		[灾变] L_Enders_Cataclysm-1.39 -1.20.1.jar          |Cataclysm Mod                 |cataclysm                     |1.0                 |DONE      |Manifest: NOSIGNATURE
+		[帕秋莉手册] Patchouli-1.20.1-81-FORGE.jar             |Patchouli                     |patchouli                     |1.20.1-81-FORGE     |DONE      |Manifest: NOSIGNATURE
+		collective-1.20.1-6.66.jar                        |Collective                    |collective                    |6.66                |DONE      |Manifest: NOSIGNATURE
+		[树叶渲染优化] cullleaves-forge-3.2.0.jar               |CullLeaves                    |cullleaves                    |3.2.0               |DONE      |Manifest: NOSIGNATURE
+		Searchables-forge-1.20.1-1.0.2.jar                |Searchables                   |searchables                   |1.0.2               |DONE      |Manifest: NOSIGNATURE
+		ApothicAttributes-1.20.1-1.1.4.jar                |Apothic Attributes            |attributeslib                 |1.1.4               |DONE      |Manifest: NOSIGNATURE
+		villagertools-1.20.1-1.0.3.jar                    |villagertools                 |villagertools                 |1.0.3               |DONE      |Manifest: 1f:47:ac:b1:61:82:96:b8:47:19:16:d2:61:81:11:60:3a:06:4b:61:31:56:7d:44:31:1e:0c:6f:22:5b:4c:ed
+		[连锁破坏] ftb-ultimine-forge-2001.1.2.jar            |FTB Ultimine                  |ftbultimine                   |2001.1.2            |DONE      |Manifest: NOSIGNATURE
+		[建筑手杖] constructionwand-1.20.1-2.11.jar           |Construction Wand             |constructionwand              |1.20.1-2.11         |DONE      |Manifest: NOSIGNATURE
+		[暮色风味乐事] twilightdelight-2.0.3.jar                |Twilight's Flavor & Delight   |twilightdelight               |2.0.3               |DONE      |Manifest: NOSIGNATURE
+		[一键背包整理Next] InventoryProfilesNext-forge-1.20-1.10|Inventory Profiles Next       |inventoryprofilesnext         |1.10.7              |DONE      |Manifest: NOSIGNATURE
+		architectury-9.1.12-forge.jar                     |Architectury                  |architectury                  |9.1.12              |DONE      |Manifest: NOSIGNATURE
+		flib-1.20.1-0.0.11.jar                            |flib                          |flib                          |0.0.11              |DONE      |Manifest: 1f:47:ac:b1:61:82:96:b8:47:19:16:d2:61:81:11:60:3a:06:4b:61:31:56:7d:44:31:1e:0c:6f:22:5b:4c:ed
+		l2library-2.4.20.jar                              |L2 Library                    |l2library                     |2.4.20              |DONE      |Manifest: NOSIGNATURE
+		[莱特兰-背包] l2backpack-2.4.12.jar                    |L2 Backpack                   |l2backpack                    |2.4.12              |DONE      |Manifest: NOSIGNATURE
+		l2damagetracker-0.1.6.jar                         |L2 Damage Tracker             |l2damagetracker               |0.1.6               |DONE      |Manifest: NOSIGNATURE
+		polylib-forge-1200.0.2-build.85.jar               |PolyLib                       |polylib                       |1200.0.2-build.85   |DONE      |Manifest: NOSIGNATURE
+		[潜影盒工具提示] shulkerboxtooltip-forge-4.0.4+1.20.1.jar|ShulkerBoxTooltip             |shulkerboxtooltip             |4.0.4+1.20.1        |DONE      |Manifest: NOSIGNATURE
+		[更好的进度] BetterAdvancements-1.20.1-0.3.2.161.jar   |Better Advancements           |betteradvancements            |0.3.2.161           |DONE      |Manifest: NOSIGNATURE
+		Cucumber-1.20.1-7.0.3.jar                         |Cucumber Library              |cucumber                      |7.0.3               |DONE      |Manifest: NOSIGNATURE
+		l2tabs-0.1.5.jar                                  |L2 Tabs                       |l2tabs                        |0.1.5               |DONE      |Manifest: NOSIGNATURE
+		ftb-library-forge-2001.1.3.jar                    |FTB Library                   |ftblibrary                    |2001.1.3            |DONE      |Manifest: NOSIGNATURE
+		[FTB 团队] ftb-teams-forge-2001.1.4.jar             |FTB Teams                     |ftbteams                      |2001.1.4            |DONE      |Manifest: NOSIGNATURE
+		octolib-0.1.jar                                   |OctoLib                       |octolib                       |0.1                 |DONE      |Manifest: NOSIGNATURE
+		[物品过滤器] item-filters-forge-2001.1.0-build.55.jar  |Item Filters                  |itemfilters                   |2001.1.0-build.55   |DONE      |Manifest: NOSIGNATURE
+		[JEI物品管理器] jei-1.20.1-forge-15.2.0.27.jar         |Just Enough Items             |jei                           |15.2.0.27           |DONE      |Manifest: NOSIGNATURE
+		[属性修复] AttributeFix-Forge-1.20.1-21.0.2.jar       |AttributeFix                  |attributefix                  |21.0.2              |DONE      |Manifest: eb:c4:b1:67:8b:f9:0c:db:dc:4f:01:b1:8e:61:64:39:4c:10:85:0b:a6:c4:c7:48:f0:fa:95:f2:cb:08:3a:e5
+		libraryferret-forge-1.20.1-4.0.0.jar              |Library ferret                |libraryferret                 |4.0.0               |DONE      |Manifest: NOSIGNATURE
+		[莱特兰-扩充] l2complements-2.4.18.jar                 |L2 Complements                |l2complements                 |2.4.18              |DONE      |Manifest: NOSIGNATURE
+		[通用机械] Mekanism-1.20.1-10.4.1.15.jar              |Mekanism                      |mekanism                      |10.4.1              |DONE      |Manifest: NOSIGNATURE
+		[通用机械发电机] MekanismGenerators-1.20.1-10.4.1.15.jar |Mekanism: Generators          |mekanismgenerators            |10.4.1              |DONE      |Manifest: NOSIGNATURE
+		[传送石碑／指路石] waystones-forge-1.20-14.0.2.jar        |Waystones                     |waystones                     |14.0.2              |DONE      |Manifest: NOSIGNATURE
+		[旅行地图] journeymap-1.20.1-5.9.15-forge.jar         |Journeymap                    |journeymap                    |5.9.15              |DONE      |Manifest: NOSIGNATURE
+		[舒适用品] comforts-forge-6.3.4+1.20.1.jar            |Comforts                      |comforts                      |6.3.4+1.20.1        |DONE      |Manifest: NOSIGNATURE
+		[自然罗盘／生物群系指南针] NaturesCompass-1.20.1-1.11.2-forge.|Nature's Compass              |naturescompass                |1.20.1-1.11.2-forge |DONE      |Manifest: NOSIGNATURE
+		[奇异饰品] artifacts-forge-9.1.0.jar                  |Artifacts                     |artifacts                     |9.1.0               |DONE      |Manifest: NOSIGNATURE
+		LibX-1.20.1-5.0.7.jar                             |LibX                          |libx                          |1.20.1-5.0.7        |DONE      |Manifest: NOSIGNATURE
+		[更多原版工具] MoreVanillaTools-1.20.1-6.0.0.jar        |MoreVanillaTools              |morevanillatools              |1.20.1-6.0.0        |DONE      |Manifest: NOSIGNATURE
+		l2screentracker-0.1.3.jar                         |L2 Screen Tracker             |l2screentracker               |0.1.3               |DONE      |Manifest: NOSIGNATURE
+		[FTB备份2] ftbbackups2-forge-1.20-1.0.22.jar        |FTB Backups 2                 |ftbbackups2                   |1.0.22              |DONE      |Manifest: NOSIGNATURE
+		midnightlib-forge-1.4.1.jar                       |MidnightLib                   |midnightlib                   |1.4.1               |DONE      |Manifest: NOSIGNATURE
+		[泛用兼容：木材] everycomp-1.20-2.6.7.jar                |Every Compat                  |everycomp                     |1.20-2.6.7          |DONE      |Manifest: NOSIGNATURE
+		WhatTheGold1.20.1.jar                             |whatthegold                   |whatthegold                   |1.0.0               |DONE      |Manifest: NOSIGNATURE
+		[新生魔艺] ars_nouveau-1.20.1-4.7.3-all.jar           |Ars Nouveau                   |ars_nouveau                   |4.7.3               |DONE      |Manifest: NOSIGNATURE
+		forge-1.20.1-47.2.0-universal.jar                 |Forge                         |forge                         |47.2.0              |DONE      |Manifest: 84:ce:76:e8:45:35:e4:0e:63:86:df:47:59:80:0f:67:6c:c1:5f:6e:5f:4d:b3:54:47:1a:9f:7f:ed:5e:f2:90
+		hunters_return-1.20.1-11.1.2.jar                  |Hunters Returns               |hunters_return                |1.20.1-11.1.2       |DONE      |Manifest: NOSIGNATURE
+		[神秘农业] MysticalAgriculture-1.20.1-7.0.5.jar       |Mystical Agriculture          |mysticalagriculture           |7.0.5               |DONE      |Manifest: NOSIGNATURE
+		[神秘农业扩展] MysticalAgradditions-1.20.1-7.0.1.jar    |Mystical Agradditions         |mysticalagradditions          |7.0.1               |DONE      |Manifest: NOSIGNATURE
+		[更多箱子] ironchest-1.20.1-14.4.4.jar                |Iron Chests                   |ironchest                     |1.20.1-14.4.4       |DONE      |Manifest: NOSIGNATURE
+		[地牢浮现之时] DungeonsArise-1.20.1-2.1.57-release.jar  |When Dungeons Arise           |dungeons_arise                |2.1.57-1.20.1       |DONE      |Manifest: NOSIGNATURE
+		[合成辅助] craftingtweaks-forge-1.20-18.2.1.jar       |CraftingTweaks                |craftingtweaks                |18.2.1              |DONE      |Manifest: NOSIGNATURE
+		client-1.20.1-20230612.114412-srg.jar             |Minecraft                     |minecraft                     |1.20.1              |DONE      |Manifest: a1:d4:5e:04:4f:d3:d6:e0:7b:37:97:cf:77:b0:de:ad:4a:47:ce:8c:96:49:5f:0a:cf:8c:ae:b2:6d:4b:8a:3f
+		alexscaves-1.0.0.jar                              |Alex's Caves                  |alexscaves                    |1.0.0               |DONE      |Manifest: NOSIGNATURE
+		libIPN-forge-1.20-4.0.0.jar                       |libIPN                        |libipn                        |4.0.0               |DONE      |Manifest: NOSIGNATURE
+		[附魔描述] EnchantmentDescriptions-Forge-1.20.1-17.0.8|EnchantmentDescriptions       |enchdesc                      |17.0.8              |DONE      |Manifest: eb:c4:b1:67:8b:f9:0c:db:dc:4f:01:b1:8e:61:64:39:4c:10:85:0b:a6:c4:c7:48:f0:fa:95:f2:cb:08:3a:e5
+		TerraBlender-forge-1.20.1-3.0.0.169.jar           |TerraBlender                  |terrablender                  |3.0.0.169           |DONE      |Manifest: NOSIGNATURE
+		[超多生物群系] BiomesOPlenty-1.20.1-18.0.0.598.jar      |Biomes O' Plenty              |biomesoplenty                 |18.0.0.598          |DONE      |Manifest: NOSIGNATURE
+		moonlight-1.20-2.8.50-forge.jar                   |Moonlight Library             |moonlight                     |1.20-2.8.50         |DONE      |Manifest: NOSIGNATURE
+		[怪奇宝典] eccentrictome-1.20.1-1.10.1.jar            |Eccentric Tome                |eccentrictome                 |1.20.1-1.10.1       |DONE      |Manifest: NOSIGNATURE
+		ftb-quests-forge-2001.1.6.jar                     |FTB Quests                    |ftbquests                     |2001.1.6            |DONE      |Manifest: NOSIGNATURE
+		[钛] titanium-1.20.1-3.8.22.jar                    |Titanium                      |titanium                      |3.8.22              |DONE      |Manifest: NOSIGNATURE
+		[玉 🔍] Jade-1.20.1-forge-11.6.3.jar               |Jade                          |jade                          |11.6.3              |DONE      |Manifest: NOSIGNATURE
+		[应用能源2] appliedenergistics2-forge-15.0.13.jar     |Applied Energistics 2         |ae2                           |15.0.13             |DONE      |Manifest: NOSIGNATURE
+		spectrelib-forge-0.13.14+1.20.1.jar               |SpectreLib                    |spectrelib                    |0.13.14+1.20.1      |DONE      |Manifest: NOSIGNATURE
+		[傀儡装配] modulargolems-2.4.17.jar                   |Modular Golems                |modulargolems                 |2.4.17              |DONE      |Manifest: NOSIGNATURE
+		[莱特兰-弓艺] l2archery-2.4.9.jar                      |L2 Archery                    |l2archery                     |2.4.9               |DONE      |Manifest: NOSIGNATURE
+		[莱特兰-武器] l2weaponry-2.4.18.jar                    |L2 Weaponry                   |l2weaponry                    |2.4.18              |DONE      |Manifest: NOSIGNATURE
+		whats-that-slot-forge-1.3.4+1.20.1.jar            |What's That Slot              |whats_that_slot               |1.3.4               |DONE      |Manifest: NOSIGNATURE
+		Coins-Forge-1.20.1-13.0.2.jar                     |Coins                         |coinsje                       |13.0.2              |DONE      |Manifest: eb:c4:b1:67:8b:f9:0c:db:dc:4f:01:b1:8e:61:64:39:4c:10:85:0b:a6:c4:c7:48:f0:fa:95:f2:cb:08:3a:e5
+		kffmod-4.5.0.jar                                  |Kotlin For Forge              |kotlinforforge                |4.5.0               |DONE      |Manifest: NOSIGNATURE
+		[村民物品化／简单村民] easy_villagers-1.20.1-1.0.14.jar     |Easy Villagers                |easy_villagers                |1.20.1-1.0.14       |DONE      |Manifest: NOSIGNATURE
+		pipez-1.20.1-1.2.0.jar                            |Pipez                         |pipez                         |1.20.1-1.2.0        |DONE      |Manifest: NOSIGNATURE
+		[作物盛景] Croptopia-1.20.1-FORGE-2.3.2.jar           |Croptopia                     |croptopia                     |2.3.2               |DONE      |Manifest: NOSIGNATURE
+		baubley-heart-canisters-1.20.1-1.0.3.jar          |Baubley Heart Canisters       |bhc                           |1.20.1-1.0.3        |DONE      |Manifest: NOSIGNATURE
+		[多态合成] polymorph-forge-0.49.0+1.20.1.jar          |Polymorph                     |polymorph                     |0.49.0+1.20.1       |DONE      |Manifest: NOSIGNATURE
+		[储物抽屉] storagedrawers-1.20.1-12.0.2.jar           |Storage Drawers               |storagedrawers                |12.0.2              |DONE      |Manifest: NOSIGNATURE
+		[实体渲染机制优化] entityculling-forge-1.6.2-mc1.20.1.jar |EntityCulling                 |entityculling                 |1.6.2               |DONE      |Manifest: NOSIGNATURE
+		[物品栏HUD+] invhud.forge.1.20.1-3.4.18.jar          |Inventory HUD+(Forge edition) |inventoryhud                  |3.4.18              |DONE      |Manifest: NOSIGNATURE
+		EndlessBiomes 1.4.2s - 1.20.1.jar                 |EndlessBiomes                 |endlessbiomes                 |1.0.0               |DONE      |Manifest: NOSIGNATURE
+		[苹果皮] appleskin-forge-mc1.20.1-2.5.1.jar          |AppleSkin                     |appleskin                     |2.5.1+mc1.20.1      |DONE      |Manifest: NOSIGNATURE
+		lootr-1.20-0.7.30.73.jar                          |Lootr                         |lootr                         |0.7.29.68           |DONE      |Manifest: NOSIGNATURE
+		[铁氧体磁芯] ferritecore-6.0.0-forge.jar               |Ferrite Core                  |ferritecore                   |6.0.0               |DONE      |Manifest: 41:ce:50:66:d1:a0:05:ce:a1:0e:02:85:9b:46:64:e0:bf:2e:cf:60:30:9a:fe:0c:27:e0:63:66:9a:84:ce:8a
+		[生活调味料：胡萝卜版] solcarrot-1.20.1-1.15.0.jar          |Spice of Life: Carrot Edition |solcarrot                     |1.15.0              |DONE      |Manifest: NOSIGNATURE
+		PuzzlesLib-v8.0.24-1.20.1-Forge.jar               |Puzzles Lib                   |puzzleslib                    |8.0.24              |DONE      |Manifest: 9a:09:85:98:65:c4:8c:11:c5:49:f6:d6:33:23:39:df:8d:b4:ff:92:84:b8:bd:a5:83:9f:ac:7f:2a:d1:4b:6a
+		l2itemselector-0.1.5.jar                          |L2 Item Selector              |l2itemselector                |0.1.5               |DONE      |Manifest: NOSIGNATURE
+		[时装盔甲重置版] cosmeticarmorreworked-1.20.1-v1a.jar    |CosmeticArmorReworked         |cosmeticarmorreworked         |1.20.1-v1a          |DONE      |Manifest: 5e:ed:25:99:e4:44:14:c0:dd:89:c1:a9:4c:10:b5:0d:e4:b1:52:50:45:82:13:d8:d0:32:89:67:56:57:01:53
+		expandability-forge-9.0.0.jar                     |ExpandAbility                 |expandability                 |9.0.0               |DONE      |Manifest: NOSIGNATURE
+		[护甲上限突破] overloadedarmorbar-1.20.1-1.jar          |Overloaded Armor Bar          |overloadedarmorbar            |1.20.1-1            |DONE      |Manifest: NOSIGNATURE
+		responsiveshields-2.2.jar                         |Responsive Shields            |responsiveshields             |2.2                 |DONE      |Manifest: NOSIGNATURE
+	Crash Report UUID: 9ca04967-0d03-46ad-bd9c-76ba834611b3
+	FML: 47.2
+	Forge: net.minecraftforge:47.2.0
